@@ -1,0 +1,39 @@
+/*
+Theme Name: Dayservice Ikoi
+Theme URI: https://example.com/dayservice-ikoi
+Author: Your Name
+Description: デイサービス憩のWordPressテーマ
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: dayservice-ikoi
+*/
+
+/* カスタム基本スタイル */
+:root {
+  --color-primary: #1B315B;
+  --color-secondary: #e8c15f;
+  --color-paper: #faf9f6;
+}
+
+/* 縦書きテキスト */
+.vertical-text {
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+}
+
+/* アニメーション */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.6s ease-out forwards;
+}

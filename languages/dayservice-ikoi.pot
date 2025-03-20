@@ -1,0 +1,29 @@
+# Copyright (C) 2024 Your Name
+# This file is distributed under the GNU General Public License v2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Dayservice Ikoi 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/theme/dayservice-ikoi\n"
+"POT-Creation-Date: 2024-03-14 12:00:00+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2024-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+
+#: 404.php:12
+msgid "ページが見つかりません"
+msgstr ""
+
+#: inc/customizer.php:7
+msgid "お問い合わせ情報"
+msgstr ""
+
+#: inc/template-functions.php:19
+msgid "メインメニュー"
+msgstr ""
+
+#: inc/template-functions.php:20
+msgid "フッターメニュー"
+msgstr ""

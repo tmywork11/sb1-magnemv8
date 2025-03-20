@@ -1,0 +1,76 @@
+/* Base styles */
+:root {
+  --color-primary: #1B315B;
+  --color-secondary: #e8c15f;
+  --color-paper: #faf9f6;
+  --font-sans: 'Noto Sans JP', sans-serif;
+  --font-serif: 'Noto Serif JP', serif;
+}
+
+/* Layout */
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Section spacing */
+section {
+  padding: 6rem 0;
+}
+
+/* Access section */
+.access-section {
+  background-color: var(--color-paper);
+}
+
+.access-section .info-box {
+  background: white;
+  border-radius: 0.5rem;
+  padding: 2rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.access-section h3 {
+  color: var(--color-primary);
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.access-section .contact-list {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.access-section .contact-item {
+  display: flex;
+  align-items: center;
+}
+
+.access-section .contact-label {
+  width: 8rem;
+  color: var(--color-primary);
+  font-weight: 500;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  section {
+    padding: 4rem 0;
+  }
+  
+  .container {
+    padding: 0 1.5rem;
+  }
+
+  .access-section .contact-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .access-section .contact-label {
+    width: auto;
+    margin-bottom: 0.25rem;
+  }
+}

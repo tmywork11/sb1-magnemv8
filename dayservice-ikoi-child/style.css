@@ -1,0 +1,154 @@
+/*
+Theme Name: Dayservice Ikoi Child
+Theme URI: https://example.com/dayservice-ikoi-child
+Template: dayservice-ikoi
+Author: Your Name
+Author URI: https://example.com
+Description: Child theme for Dayservice Ikoi
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: dayservice-ikoi-child
+*/
+
+/* Import parent theme styles */
+@import url('../dayservice-ikoi/style.css');
+
+/* Custom styles */
+:root {
+  --color-primary: #1B315B;
+  --color-secondary: #e8c15f;
+  --color-paper: #faf9f6;
+}
+
+/* Override parent theme styles */
+.site-header {
+  background: var(--color-primary);
+}
+
+.site-header .site-title a,
+.site-header .main-navigation a {
+  color: white;
+}
+
+.site-header .main-navigation a:hover {
+  color: var(--color-secondary);
+}
+
+/* Hero section customization */
+.hero-section {
+  position: relative;
+  height: 100vh;
+  margin-top: -80px;
+}
+
+.hero-slide {
+  position: absolute;
+  inset: 0;
+  transition: opacity 1s;
+}
+
+.hero-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(27, 49, 91, 0.4), rgba(27, 49, 91, 0.7));
+}
+
+.vertical-text {
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  font-family: var(--font-serif);
+  font-size: 2.5rem;
+  font-weight: bold;
+  line-height: 2;
+  margin-left: 4rem;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  color: white;
+}
+
+/* News section customization */
+.news-section {
+  background: var(--color-paper);
+  padding: 4rem 0;
+}
+
+.news-item {
+  background: white;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  transition: all 0.2s;
+}
+
+.news-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.news-category {
+  background: var(--color-primary);
+  color: white;
+  padding: 0.25rem 0.75rem;
+  border-radius: 1rem;
+  font-size: 0.75rem;
+}
+
+/* Access section customization */
+.access-section {
+  background: var(--color-paper);
+}
+
+.access-info {
+  background: white;
+  border-radius: 0.5rem;
+  padding: 2rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.access-info h3 {
+  color: var(--color-primary);
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+/* Footer customization */
+.site-footer {
+  background: var(--color-primary);
+  color: white;
+}
+
+.footer-info h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.footer-navigation a {
+  color: rgba(255, 255, 255, 0.8);
+  transition: color 0.2s;
+}
+
+.footer-navigation a:hover {
+  color: white;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .vertical-text {
+    font-size: 2rem;
+    margin-left: 2rem;
+  }
+
+  .news-item {
+    padding: 1rem;
+  }
+
+  .access-info {
+    padding: 1.5rem;
+  }
+}

@@ -1,0 +1,113 @@
+@import '@fontsource/noto-serif-jp/400.css';
+@import '@fontsource/noto-serif-jp/500.css';
+@import '@fontsource/noto-serif-jp/700.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-primary: #1B315B;
+    --color-secondary: #e8c15f;
+    --color-paper: #faf9f6;
+  }
+
+  html {
+    font-family: "Noto Sans JP", sans-serif;
+    background-color: theme('colors.paper.100');
+    font-size: 18px;
+    line-height: 1.8;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: "Noto Serif JP", serif;
+    line-height: 1.6;
+  }
+
+  p {
+    margin-bottom: 1.5rem;
+  }
+}
+
+@layer components {
+  /* メインビジュアル */
+  .hero-title {
+    @apply font-serif text-5xl font-bold;
+  }
+
+  /* セクションヘッダー */
+  .section-title {
+    @apply font-serif text-3xl font-bold text-center mb-6 text-primary-800;
+  }
+  
+  .section-subtitle {
+    @apply text-xl text-primary-600 text-center mb-12 max-w-2xl mx-auto;
+  }
+
+  /* サービス紹介 */
+  .service-title {
+    @apply font-serif text-3xl font-bold mb-4 text-primary-800;
+  }
+
+  .service-description {
+    @apply text-lg text-primary-600 leading-relaxed;
+  }
+
+  /* お知らせ */
+  .news-title {
+    @apply text-3xl font-bold text-primary-800;
+  }
+
+  .news-meta {
+    @apply text-base text-primary-500;
+  }
+
+  /* 料金表 */
+  .price-title {
+    @apply text-3xl font-bold text-primary-800 mb-4;
+  }
+
+  .price-description {
+    @apply text-lg text-primary-600;
+  }
+
+  /* アクセス */
+  .access-title {
+    @apply text-3xl font-bold text-primary-800 mb-4;
+  }
+
+  .access-info {
+    @apply text-lg text-primary-600;
+  }
+  
+  /* ボタン */
+  .primary-button {
+    @apply inline-flex items-center px-8 py-4 text-lg bg-primary-600 text-paper-50 rounded-lg 
+           hover:bg-primary-700 transition-all duration-200 transform hover:-translate-y-1;
+  }
+  
+  .secondary-button {
+    @apply inline-flex items-center px-8 py-4 text-lg text-primary-600 hover:text-primary-700 
+           hover:bg-primary-50 rounded-lg transition-colors duration-200;
+  }
+}
+
+.vertical-text {
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  font-family: "Noto Serif JP", serif;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  animation: fadeIn 1s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateX(-20px) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+  }
+}
